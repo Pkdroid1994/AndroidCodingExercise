@@ -17,11 +17,6 @@ import io.reactivex.observers.TestObserver;
 
 public class FactsRepositoryTest {
 
-    @Mock
-    private ConnectivityUtil connectivityUtil;
-
-    @Mock
-    private FactsRepository factsRepository;
 
     @Mock
     private ApiInterface apiInterface;
@@ -29,7 +24,6 @@ public class FactsRepositoryTest {
     @Before
     public void setUpRepository() {
         MockitoAnnotations.initMocks(this);
-        factsRepository = Mockito.spy(new FactsRepository(connectivityUtil));
     }
 
     @Test
