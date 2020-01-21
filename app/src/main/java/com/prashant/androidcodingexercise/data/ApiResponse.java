@@ -9,7 +9,6 @@ import com.prashant.androidcodingexercise.utils.Status;
 public class ApiResponse {
     public final Status status;
 
-
     @Nullable
     public final AllFactsResponseModel data;
 
